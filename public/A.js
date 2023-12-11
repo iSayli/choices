@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     socket.on('updateState', (gameState) => {
     if (gameState.scene === 2) {
         // Change the video source for scene 2
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/pc93zin50bxzc98ev9220/Intro.mov?rlkey=3faj4z517kp8q8kl1uz1767b0&raw=1';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/xxhz4mlym67ohhm65m78x/Intro-2.mp4?rlkey=dldyodh16apo3jq999q1s4f9h&raw=1';
         smallTextElement.textContent = '';
         // Trigger the video to start playing
         gameVideo.play();
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger the video to start playing
     } else if (gameState.scene === 3) {
         // Change the video source for scene 3
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/0zu1lrlen00gglgxc5hqb/Part1Launch.mov?rlkey=j8a5n2jqpvu4eo65oa6thq02e&raw=1';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/36j2t2rygxzzgsyonjkgf/Part1Launch.mp4?rlkey=u6js6x8j3y1ykgq7ncqem79zb&raw=1';
         smallTextElement.textContent = '';
         gameVideo.play();
         // Trigger the video to start playing
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Trigger the video to start playing
     } else if (gameState.scene === 4) {
         // Change the video source for scene 4
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/hqdk1jk9lbc8dj5qslei4/Part2CloudRunNew.mov?rlkey=gx0yxpk3zz6nqj05t5ct4kivs&dl=0';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/iektn0u2etx3d43zykhe4/Part2CloudRunNew.mp4?rlkey=k1xw10n16v2cw0senqhxx46j5&raw=1';
         smallTextElement.textContent = ''
         gameVideo.play();
         ;
@@ -51,18 +51,18 @@ document.addEventListener('DOMContentLoaded', () => {
         ;
     } else if (gameState.scene === 5) {
         // Change the video source for scene 5
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/chszwid8onxk0egdq6hxa/Part3CargoGrab.mov?rlkey=5lflkh4mgjc7ua82hlqbycgyd&raw=1';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/7rcrb1wxard34ie1l8sds/Part3CargoGrab-1.mp4?rlkey=b5aw4in7jlzfwy83aiftmy5dl&raw=1';
         gameVideo.play();
         ;
     }else if (gameState.scene === 5.4) {
         // Victory Scene
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/y38bnasi2ktxc8kascjkq/Part4Victory.mov?rlkey=bqhmoe3d6v1femozwqxo5kj2h&raw=1';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/k0wm5gv16h8bsc8cvpddf/Part4Victory-1.mp4?rlkey=c708o6o8115lm7stnebtzb2q1&raw=1';
         smallTextElement.textContent = 'Congratulations you have got the cargo. You can go home..... '
         gameVideo.play();
         ;
     } else if (gameState.scene === 5.5) {
         // Change the video source for scene 5
-        gameVideo.src = 'https://www.dropbox.com/scl/fi/pc93zin50bxzc98ev9220/Intro.mov?rlkey=3faj4z517kp8q8kl1uz1767b0&raw=1';
+        gameVideo.src = 'https://www.dropbox.com/scl/fi/n1subrdll63tqj92qhcws/startScreen.mp4?rlkey=mxpb3dtnzbvqqgo1crw5nbu6u&raw=1';
         smallTextElement.textContent = 'Do you want to start again?'
         gameVideo.play();
         ;
