@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 2.5) {
         // Change the video source for scene 3
         gameVideo.src = 'https://www.dropbox.com/scl/fi/zbs9sfdbd3qx16s1zt7a3/Launch-Paused.mp4?rlkey=6g8mfzly98bevcji8q2wu875n&raw=1';
-        smallTextElement.textContent = 'You can either take asteroid route or long route. Hunter spence will help you with this decision';
+        smallTextElement.textContent = 'Choose the path. Noahs superpower will guide you (Hint:IPDL Lab)';
         gameVideo.play();
         gameVideo.loop = "true";
         // Trigger the video to start playing
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 3.5) {
         // Change the video source for scene 3
         gameVideo.src = 'https://www.dropbox.com/scl/fi/q8ca8yipg6z5ij251ue8a/AsteroidPaused.mp4?rlkey=r10redevptl9dch8ia10zp0s5&raw=1';
-        smallTextElement.textContent = 'You can either hide in clouds or attack enemies. Go to this place and this place in this building to help you with this decision';
+        smallTextElement.textContent = 'Mannequins left heel will help you with your plan of action';
         gameVideo.play();
 
         // Trigger the video to start playing
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 4.5) {
         // Change the video source for scene 4
         gameVideo.src = 'https://www.dropbox.com/scl/fi/e8lybh75q3jm0mqtxuf9j/Cloud-Paused.mp4?rlkey=tltiqs6tgp9peql13oo89dtqj&raw=1';
-        smallTextElement.textContent = 'You need to launch an attack! Select the code which will be hidden in other team’s project ..... '
+        smallTextElement.textContent = 'You are close to finishing your mission.Maybe resting on the waterfall bench can help you'
         gameVideo.play();
         ;
     } else if (gameState.scene === 5) {
