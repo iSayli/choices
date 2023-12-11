@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       afterTakeoff();
       resetTimer();
-    }, 46000);
+    }, 38000);
   }
 
   function afterTakeoff() {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       afterPath();
       resetTimer();
-    }, 23000);
+    }, 32000);
   }
 
   function afterPath() {
@@ -102,12 +102,25 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       afterCode();
       resetTimer();
-    }, 11000);
+    }, 19000);
   }
 
   function afterCode() {
     document.getElementById('game-play5').style.display = 'block';
     socket.emit('afterCode');
+    setTimeout(() => {
+      doyouwanna();
+      resetTimer();
+    }, 6000);
+
+  }
+
+  function doyouwanna() {
+    document.getElementById('game-play2').style.display = 'none';
+    document.getElementById('game-play3').style.display = 'none';
+    document.getElementById('game-play4').style.display = 'none';
+    document.getElementById('game-play5').style.display = 'none';
+    socket.emit('doyouwanna');
   }
 
   function startAgain() {
@@ -173,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   socket.on('doyouwanna', () => {
     resetTimer();
-    afterCode();
+    doyouwanna();
   });
 
 

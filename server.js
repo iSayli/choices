@@ -73,13 +73,21 @@ function startScene45() {
 
 function startScene5() {
     gameState.scene = 5;
-    io.emit('updateState', gameState);
-  
+    io.emit('updateState', gameState);  
 }
 
-function startScene55() {
+function startScene54() {
+  gameState.scene = 5.4;
+  io.emit('updateState', gameState);
+}
+
+function doyouwanna() {
   gameState.scene = 5.5;
   io.emit('updateState', gameState);
+  setTimeout(() => {
+    io.emit('aftergameover');
+  }, 8000);    
+
 }
 
 function startScene6() {
@@ -187,9 +195,16 @@ io.on('connection', (socket) => {
   });
 
   socket.on('afterCode', () => {
-    startScene55();
+    startScene54();
     //startTimer();
   });
+
+  socket.on('doyouwanna', () => {
+    doyouwanna();
+    //startTimer();
+  });
+
+
 
   socket.on('startAgain', ()=>{
     stopTimer();
