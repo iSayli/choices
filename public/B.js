@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function doyouwanna() {
+    document.getElementById('game-play1').style.display = 'block';
     document.getElementById('game-play2').style.display = 'none';
     document.getElementById('game-play3').style.display = 'none';
     document.getElementById('game-play4').style.display = 'none';

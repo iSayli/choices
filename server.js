@@ -84,10 +84,6 @@ function startScene54() {
 function doyouwanna() {
   gameState.scene = 5.5;
   io.emit('updateState', gameState);
-  setTimeout(() => {
-    io.emit('aftergameover');
-  }, 8000);    
-
 }
 
 function startScene6() {
@@ -95,7 +91,7 @@ function startScene6() {
     io.emit('updateState', gameState);
     setTimeout(() => {
       io.emit('doyouwanna');
-    }, 8000);    
+    }, 15000);    
 
 }
 
@@ -203,8 +199,6 @@ io.on('connection', (socket) => {
     doyouwanna();
     //startTimer();
   });
-
-
 
   socket.on('startAgain', ()=>{
     stopTimer();
