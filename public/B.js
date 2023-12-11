@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const socket = io.connect('https://app-production-6364.up.railway.app/');
+  const socket = io.connect('https://choices-production.up.railway.app/');
   
   const singleOptionButton = document.getElementById('single-option');
   const againOptionButton = document.getElementById('again-option');

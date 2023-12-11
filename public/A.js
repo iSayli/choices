@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameVideo = document.getElementById('game-video');
     const smallTextElement = document.getElementById('a-small-text');
 
-    const socket = io.connect('https://app-production-6364.up.railway.app/');
+    const socket = io.connect('https://choices-production.up.railway.app/');
 
     socket.on('reloadPage', () => {
         location.reload(true); // Reload the entire page
