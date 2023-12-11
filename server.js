@@ -84,6 +84,9 @@ function startScene54() {
 function doyouwanna() {
   gameState.scene = 5.5;
   io.emit('updateState', gameState);
+  setTimeout(() => {
+    startAgain();
+  }, 10000);    
 }
 
 function startScene6() {

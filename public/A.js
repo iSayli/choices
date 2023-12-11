@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 5.5) {
         // Change the video source for scene 5
         gameVideo.src = 'https://www.dropbox.com/scl/fi/n1subrdll63tqj92qhcws/startScreen.mp4?rlkey=mxpb3dtnzbvqqgo1crw5nbu6u&raw=1';
-        smallTextElement.textContent = 'Do you want to start again?'
+        smallTextElement.textContent = 'You can start again....'
         gameVideo.play();
         ;
     } else if (gameState.scene === 6) {
