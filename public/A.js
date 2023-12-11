@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 5) {
         // Change the video source for scene 5
         gameVideo.src = 'https://www.dropbox.com/scl/fi/7rcrb1wxard34ie1l8sds/Part3CargoGrab-1.mp4?rlkey=b5aw4in7jlzfwy83aiftmy5dl&raw=1';
+        smallTextElement.textContent = ''
         gameVideo.play();
         ;
     }else if (gameState.scene === 5.4) {
