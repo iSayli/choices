@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (gameState.scene === 4.5) {
         // Change the video source for scene 4
         gameVideo.src = 'https://www.dropbox.com/scl/fi/e8lybh75q3jm0mqtxuf9j/Cloud-Paused.mp4?rlkey=tltiqs6tgp9peql13oo89dtqj&raw=1';
-        smallTextElement.textContent = 'You are close to finishing your mission.Maybe resting on the waterfall bench can help you'
+        smallTextElement.textContent = 'You are close to finishing your mission...Look out the window next to the palm tree'
         gameVideo.play();
         ;
     } else if (gameState.scene === 5) {
