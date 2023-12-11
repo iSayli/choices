@@ -1,0 +1,64 @@
+/* B.css styles for B.html */
+
+body {
+  font-family:'Courier New', Courier, monospace;
+  background-color: #0b021e;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+
+#button-space{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#game-play2,#game-play3,#game-play4{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+button {
+font-family:'Courier New', Courier, monospace;
+background-color: rgba(0, 0, 0, 0);
+color: #fff;
+cursor: pointer;
+border-style:double;
+border-color: rgb(217, 0, 255);
+border-radius: 5px;
+max-width: fit-content;
+font-size: 36px;
+padding: 50px;
+}
+
+#a-option-1,#a-option-2,#b-option-1,#b-option-2{
+font-size: 28px;
+padding: 40px;
+margin-top: 20px;
+}
+
+#c-option-1,#c-option-2,#c-option-3{
+font-size: 24px;
+padding: 30px;
+}
+
+button:hover {
+background-color: #00000038;
+}
+
+#timer-container{
+font-size: 28px;
+color: #ff0000;
+margin-top: 50px;
+}
+/* Add more styles as needed for your specific content */
+
